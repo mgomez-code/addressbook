@@ -1,0 +1,41 @@
+contract AddressBook =
+
+  record person = {   						// Valores claves a guardar
+    first_name  : string,
+    last_name   : string,
+    age         : int  }
+  
+  record state  = {  						// Variables definidas
+    people      : map(address, person)  }
+ 
+  entrypoint init() = {  					//Función de Inicio
+    people = {}  }
+
+  private function lookupByAddress(k : address, m, v) =  	//Función Privada verificar dirección 
+    switch(Map.lookup(k, m))
+      None    => v
+      Some(x) => x
+  
+  //Función que registra dirección
+  stateful entrypoint addPerson(address: address, first_name: string, last_name: string, age: int) : bool =
+    put(state{
+      people[address] = {first_name = first_name, last_name = last_name, age = age}  })
+    true
+ 
+  entrypoint getPerson(address : address) : person = 							//Función mostrar datos según la dirección
+    let personFound = lookupByAddress(address, state.people, {first_name = "false", last_name = "false", age = 0})
+    if (personFound.first_name == "false" && personFound.last_name == "false" && personFound.age == 0)
+      abort("No data for that person")
+    else
+      personFound
+  
+  //Funciones básicas
+  
+  stateful entrypoint contract_creator() = 				//dirección que creo el contracto
+    Contract.creator
+
+  stateful entrypoint contract_address() = 				//dirección del contracto
+    Contract.address
+
+  stateful entrypoint contract_balance() = 				//balance del contracto
+    Contract.balance

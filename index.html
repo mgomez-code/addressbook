@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 text-center div-center">
+
+          <div id="title-div">
+            <img src="img/joy.png">
+            <img src="img/addressbook.png">
+            <h1 style="color:white;">Address Book</h1>
+          </div>
+
+          <!-- div for used by a loading animation -->
+          <!-- div usado para la animación de cargando.... -->
+          <div id="message">
+            <div id="loader" class="alert alert-secondary">
+              <img src="img/loading.gif">
+              <div><b>LOADING</b></div>
+            </div>
+          </div>
+
+          <!-- div for form registration of the address -->
+          <!-- div formulario para registrar y consultar la dirección -->
+          <div>
+            <form>
+			  <h2 id="notice" style="display:none; color:red;">does not exist!</h2>
+
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" id="regAddress" class="form-control"
+                  placeholder="Address">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" id="regName" class="form-control"
+                  placeholder="First Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" id="regLast" class="form-control"
+                  placeholder="Last Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <input type="number" id="regAge" class="form-control"
+                  placeholder="Age">
+                </div>
+              </div>
+            </form>
+            <button id="consultBtn" class="btn btn-block">Consult Address</button>
+            <button id="registerBtn" class="btn btn-block">Register</button>
+          </div>
+	  
+        </div>
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/@aeternity/aepp-sdk@6.1.2/dist/aepp-sdk.browser-script.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+  <script src="index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  </body>
+</html>
