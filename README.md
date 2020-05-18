@@ -15,13 +15,11 @@ Ejemplo de contrato inteligente, que permite almacenar y consultar datos de: dir
 #####  5.- Obtener token de pruebas.
         5.1- Copiar dirección de la wallet.
         5.2- Ingresar al faucet a través del siguiente enlace usando el navegador 
-             de su preferencia: 
-   - [faucet](https://testnet.faucet.aepps.com/)
+             de su preferencia: (https://testnet.faucet.aepps.com/)
         5.3- Pegar Dirección de wallet en el campo destinado para ello.
         5.4- Hacer clic en el botón identificado como Top UP.
 #####  6.- Verificar los token en la wallet del base aepp.
-#####  7.- Ingresar al Browser de base aepp y copiar la siguiente url:
-   - [addressbook](https://mgomez-code.github.io/addressbook/)
+#####  7.- Ingresar al Browser de base aepp y copiar la siguiente url:(https://mgomez-code.github.io/addressbook/)
 #####  8.- Regresar al wallet y copia la dirección.
 #####  9.- Regresar nuevamente al Browser de base aepp.
 #####  10.- Ingresar dirección de la wallet copiada en el campo address wallet, con los demás datos solicitados.
