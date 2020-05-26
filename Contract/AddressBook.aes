@@ -29,7 +29,7 @@ contract AddressBook =
     else
       personFound
   
-  //Funciones básicas
+  //Funciones básicas no utilizadas por ahora
   
   stateful entrypoint contract_creator() = 				//dirección que creo el contracto
     Contract.creator
