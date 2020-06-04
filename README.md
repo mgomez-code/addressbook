@@ -27,11 +27,6 @@ Ejemplo de contrato inteligente, que permite almacenar y consultar datos de: dir
 #####  13.- Por último haz clic en el botón Consultar y veras los datos almacenados en el contrato inteligente.
 
 
-### Descripción de Métodos
-- entrypoint addPerson(address: address, first_name: string, last_name: string, age: int) registra a la persona con los datos de address wallet, nombre, apellido y edad.
-- entrypoint getPerson(address : address) – muestra el registro asociado con esa wallet address.
-- entrypoint function lookupByAddress(k : address, m, v) - Busca por wallet address.
-
 ### Creditos
 - Milen Radkov: https://hack.bg/blog/tutorials/build-your-first-decentralized-application-aepp-on-aeternity-blockchain-sophia-smart-contract-address-book/
 
