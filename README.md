@@ -3,7 +3,7 @@
 
 ### ¿Cómo funciona?  
 
-Ejemplo de contrato inteligente, que permite almacenar y consultar datos de: dirección de wallet, nombre, apellido y edad de los usuarios
+Ejemplo de contrato inteligente, que permite almacenar y consultar datos de: dirección de wallet, nombre, apellido y edad de nuestros contactos
 
 ### Paso a Paso
 #####  1.- Obtener la base aepp de cualquiera de los siguientes enlaces:
