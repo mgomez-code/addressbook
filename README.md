@@ -25,7 +25,7 @@ Ejemplo de contrato inteligente, que permite almacenar y consultar datos de: dir
 #####  11.- Presionar botón de comando que dice registrar.
 #####  12.- Copia nuevamente la dirección del wallet en el campo address wallet.
 #####  13.- Por último haz clic en el botón Consultar y veras los datos almacenados en el contrato inteligente.
-[Vídeo de Funcionamiento del Aplicativo] (https://youtu.be/QlC1cO7Qoc8)
+  - [Vídeo de Funcionamiento del Aplicativo] (https://youtu.be/QlC1cO7Qoc8)
 
 ### Creditos
 - Milen Radkov: https://hack.bg/blog/tutorials/build-your-first-decentralized-application-aepp-on-aeternity-blockchain-sophia-smart-contract-address-book/
