@@ -31,11 +31,11 @@ contract AddressBook =
   
   //Funciones básicas no utilizadas por ahora
   
-  stateful entrypoint contract_creator() = 				//dirección que creo el contracto
+  entrypoint contract_creator() = 				//dirección que creo el contracto
     Contract.creator
 
-  stateful entrypoint contract_address() = 				//dirección del contracto
+  entrypoint contract_address() = 				//dirección del contracto
     Contract.address
 
-  stateful entrypoint contract_balance() = 				//balance del contracto
+  entrypoint contract_balance() = 				//balance del contracto
     Contract.balance
